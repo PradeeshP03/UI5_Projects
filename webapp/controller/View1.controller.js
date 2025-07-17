@@ -7,6 +7,7 @@ sap.ui.define([
         onInit() {
             // var materialModel = new sap.ui.model.json.JSONModel("model/material.json");
             // this.getView().setModel(materialModel);
+            // this.getView().setModel(materialModel);
         },
         onProductRowPress:function(evt){
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
