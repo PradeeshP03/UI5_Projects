@@ -1,0 +1,111 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "demo.ladera.assesment1",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.2",
+      "toolsId": "d91402ae-ba50-4812-8a30-afb5609e1786"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.138.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "demo.ladera.assesment1.i18n.i18n"
+        }
+      },
+      "material" : {
+        "type" : "sap.ui.model.json.JSONModel",
+        "uri": "model/material.json"
+      } 
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "demo.ladera.assesment1.view",
+        "async": true,
+        "viewPath": "demo.ladera.assesment1.view"
+      },
+      "routes": [
+        {
+          "name": "RouteView1",
+          "pattern": ":?query:",
+          "target": [
+            "TargetView1"
+          ]
+        },
+        {
+          "name":"listpage",
+          "pattern":"listpage/{materialIndex}",
+          "target": "secondView"
+        }
+      ],
+      "targets": {
+        "TargetView1": {
+          "id": "View1",
+          "name": "View1"
+        },
+        "secondView":{
+          "id" : "VendorDetail",
+          "name" : "listpage"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "demo.ladera.assesment1.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}
