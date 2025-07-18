@@ -5,7 +5,7 @@ sap.ui.getCore().attachInit(function () {
 	"use strict";
 
 	sap.ui.require([
-		"demo/ladera/assesment1/test/unit/AllTests"
+		"demo/ladera/employee/test/unit/AllTests"
 	], function () {
 		QUnit.start();
 	});

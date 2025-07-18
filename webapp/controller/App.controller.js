@@ -3,7 +3,7 @@ sap.ui.define([
 ], (BaseController) => {
   "use strict";
 
-  return BaseController.extend("demo.ladera.assesment1.controller.App", {
+  return BaseController.extend("demo.ladera.employee.controller.App", {
       onInit() {
       }
   });

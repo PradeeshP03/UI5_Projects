@@ -1,0 +1,18 @@
+<mvc:View controllerName="demo.ladera.employee.controller.employeeview"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+    <Page id="employeeDetail" title="Employee Detail Page" showNavButton="true" navButtonPress="onNavigationBack">
+   <f:SimpleForm>
+        <f:content>
+            <Label text="Employee Name"/>
+            <Input value="{productDetailModel>/EmployeeName}"/>
+            <Label text="Designation"/>
+            <Input value="{productDetailModel>/Designation}"/>
+            <Label text="Department"/>
+            <Input value="{productDetailModel>/Department}"/>
+            <Label text="Location"/>
+            <Input value="{productDetailModel>/Location}"/>
+        </f:content>
+    </f:SimpleForm>
+    </Page>
+</mvc:View>

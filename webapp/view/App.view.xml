@@ -1,4 +1,4 @@
-<mvc:View controllerName="demo.ladera.assesment1.controller.App"
+<mvc:View controllerName="demo.ladera.employee.controller.App"
     displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">

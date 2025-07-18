@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Start assesment1",
+      "name": "Start employee",
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -16,7 +16,7 @@
       ],
       "args": [
         "--open",
-        "test/flp.html#app-preview"
+        "test/flpSandbox.html#demoladeraemployee-display"
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
@@ -24,11 +24,11 @@
       "env": {
         "DEBUG": "--inspect",
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/assesment1\"}"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/employee\"}"
       }
     },
     {
-      "name": "Start assesment1 Local",
+      "name": "Start employee Local",
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -44,14 +44,14 @@
         "--config",
         "./ui5-local.yaml",
         "--open",
-        "test/flp.html#app-preview"
+        "test/flpSandbox.html#demoladeraemployee-display"
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
       "outputCapture": "std",
       "env": {
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/assesment1\"}"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/employee\"}"
       }
     }
   ]

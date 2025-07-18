@@ -1,23 +1,23 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Mon Jul 14 2025 09:38:08 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Fri Jul 04 2025 07:01:36 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>SAP Fiori Application Generator|
-|**App Generator Version**<br>1.18.2|
+|**App Generator Version**<br>1.18.1|
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Template Used**<br>Basic|
 |**Service Type**<br>None|
 |**Service URL**<br>N/A|
-|**Module Name**<br>assesment1|
+|**Module Name**<br>employee|
 |**Application Title**<br>App Title|
 |**Namespace**<br>demo.ladera|
 |**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.138.0|
+|**UI5 Version**<br>1.136.2|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 
-## assesment1
+## employee
 
 An SAP Fiori application.
 

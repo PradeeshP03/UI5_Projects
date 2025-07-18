@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "demo.ladera.assesment1",
+    "id": "demo.ladera.employee",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -12,8 +12,8 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
-      "version": "1.18.2",
-      "toolsId": "d91402ae-ba50-4812-8a30-afb5609e1786"
+      "version": "1.18.1",
+      "toolsId": "0c73eafe-3ab9-42ed-a61e-cb9bdd4acbbe"
     }
   },
   "sap.ui": {
@@ -35,7 +35,7 @@
   "sap.ui5": {
     "flexEnabled": false,
     "dependencies": {
-      "minUI5Version": "1.138.0",
+      "minUI5Version": "1.136.2",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {}
@@ -49,13 +49,9 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "demo.ladera.assesment1.i18n.i18n"
+          "bundleName": "demo.ladera.employee.i18n.i18n"
         }
-      },
-      "material" : {
-        "type" : "sap.ui.model.json.JSONModel",
-        "uri": "model/material.json"
-      } 
+      }
     },
     "resources": {
       "css": [
@@ -72,9 +68,9 @@
         "transition": "slide",
         "type": "View",
         "viewType": "XML",
-        "path": "demo.ladera.assesment1.view",
+        "path": "demo.ladera.employee.view",
         "async": true,
-        "viewPath": "demo.ladera.assesment1.view"
+        "viewPath": "demo.ladera.employee.view"
       },
       "routes": [
         {
@@ -85,8 +81,8 @@
           ]
         },
         {
-          "name":"listpage",
-          "pattern":"listpage/{materialIndex}",
+          "name":"employeeobject",
+          "pattern":"employeeobject/{productIndex}",
           "target": "secondView"
         }
       ],
@@ -96,13 +92,13 @@
           "name": "View1"
         },
         "secondView":{
-          "id" : "VendorDetail",
-          "name" : "listpage"
+          "id" : "employeeDetail",
+          "name" : "employeeobject"
         }
       }
     },
     "rootView": {
-      "viewName": "demo.ladera.assesment1.view.App",
+      "viewName": "demo.ladera.employee.view.App",
       "type": "XML",
       "id": "App",
       "async": true

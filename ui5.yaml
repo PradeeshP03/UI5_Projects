@@ -2,7 +2,7 @@
 
 specVersion: "3.1"
 metadata:
-  name: demo.ladera.assesment1
+  name: demo.ladera.employee
 type: application
 server:
   customMiddleware:

@@ -1,6 +1,6 @@
 /* global QUnit */
 
-sap.ui.require(["demo/ladera/assesment1/test/integration/AllJourneys"
+sap.ui.require(["demo/ladera/employee/test/integration/AllJourneys"
 ], function () {
 	QUnit.config.autostart = false;
 	QUnit.start();

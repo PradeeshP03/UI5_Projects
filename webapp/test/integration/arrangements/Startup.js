@@ -14,7 +14,7 @@ sap.ui.define([
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "demo.ladera.assesment1",
+					name: "demo.ladera.employee",
 					async: true
 				},
 				hash: oOptions.hash,

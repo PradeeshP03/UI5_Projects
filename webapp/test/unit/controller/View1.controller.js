@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"demo/ladera/assesment1/controller/View1.controller"
+	"demo/ladera/employee/controller/View1.controller"
 ], function (Controller) {
 	"use strict";
 

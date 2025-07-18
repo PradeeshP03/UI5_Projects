@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "demo.ladera.assesment1.view.",
+		viewNamespace: "demo.ladera.employee.view.",
 		autoWait: true
 	});
 });

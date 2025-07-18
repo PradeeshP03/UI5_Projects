@@ -1,0 +1,49 @@
+{
+    "Employees": [
+        {
+            "EmployeeId": 1,
+            "EmployeeName": "Pradeesh",
+            "Designation": "Consultant",
+            "Department": "SDU",
+            "Location": "Chennai",
+            "Status": "Success",
+            "Checkin": "In"
+        },
+        {
+            "EmployeeId": 2,
+            "EmployeeName": "Mohan",
+            "Designation": "Senior Consultant",
+            "Department": "SDU",
+            "Location": "Arcot",
+            "Status": "Error",
+            "Checkin": "Out"
+        },
+        {
+            "EmployeeId": 3,
+            "EmployeeName": "Priyan",
+            "Designation": "Junior Consultant",
+            "Department": "SDU",
+            "Location": "Kolathur",
+            "Status": "Warning",
+            "Checkin": "Yet-To-CheckIn"
+        },
+        {
+            "EmployeeId": 4,
+            "EmployeeName": "Pavithra",
+            "Designation": "HR",
+            "Department": "Management",
+            "Location": "Salem",
+            "Status": "Success",
+            "Checkin": "In"
+        },
+        {
+            "EmployeeId": 5,
+            "EmployeeName": "Balaji",
+            "Designation": "Project Manager",
+            "Department": "Management",
+            "Location": "Tambaram",
+            "Status": "Error",
+            "Checkin": "Out"
+        }
+    ]
+}

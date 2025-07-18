@@ -1,44 +1,42 @@
-<mvc:View controllerName="demo.ladera.assesment1.controller.View1"
+<mvc:View controllerName="demo.ladera.employee.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-     <Table id="MaterialTable" items="{material>/}"  >
-             <headerToolbar>
-                 <Toolbar>
-                    <content>
-                     <Title text="Material Table"/>   
-                                           </content>
-                                  </Toolbar>
-      </headerToolbar>
-            <columns>
-                <Column width="10rem">
-                    <Text text="Material Number"/>
-                </Column>
-                 <Column width="20rem">
-                    <Text text="Material Name"/>
-                </Column>
-                 <Column width="20rem">
-                    <Text text="Description"/>
-                </Column>
-                 <Column width="10rem">
-                    <Text text="Current Stock"/>
-                </Column>
-                 <Column >
-                    <Text text="Currency"/>
-                </Column>
-            </columns>
-
-                        <items>
-                <ColumnListItem type="Navigation" press="onProductRowPress">
-                    <cells>
-                        <Text text="{material>materialId}"/>
-                        <Text text="{material>materialName}"/>
-                        <Text text="{material>description}"/>
-                        <ObjectStatus text="{material>currentStock}" state="{=${material>currentStock} >= '100' ? 'Error' : ${material>currentStock} >= 10 ? 'Success' : 'Warning'}"/>
-                        <Text text="{material>pricePerUnit/currency} $"/>
-                    </cells>
-                </ColumnListItem>
-            </items>
-     </Table>
+    <Page id="page" title="{i18n>title}" >
+    	<List
+		id='employeelist'
+		headerText="Employees List"
+		mode="SingleSelect"
+items="{
+			path: '/Employees' 
+		}" >
+		<StandardListItem
+			title="{EmployeeName}"
+			description="{Designation}"
+			highlight="{Status}"
+			icon="sap-icon://employee"
+			selected="true"
+			info="{Checkin}"
+			infoState="{Status}"
+			type="Navigation" 
+			press="onProductRowPress"
+			/>
+	        <headerToolbar>
+         <Toolbar>
+            <content>
+            <Title text="Employee List"/>   
+            <ToolbarSpacer/>
+			<Title width="10%" text="Employee"/>
+            <SearchField width="10%"  liveChange="onSearchemployees" />
+			<Title width="10%" text="Designation"/>   
+			<SearchField width="10%"  change="onSearchdesignation" /> 
+			<Button width="10%" text='Sort Name' icon="sap-icon://sort" press="onSortPress"/>
+			<Button width="10%" text='Sort des' icon="sap-icon://alphabetical-order" press="onSortPressDes"/>          
+            <Button text = "Add" icon="sap-icon://add" press="onAddProduct"/> 
+			<Button text = "Edit" icon="sap-icon://edit" press="onEditProduct"/> 
+			<Button text = "Delete" icon="sap-icon://delete" press="onDelete"/> 
+		    </content>
+         </Toolbar>		
+		 </headerToolbar>
+	</List>			
     </Page>
 </mvc:View>
